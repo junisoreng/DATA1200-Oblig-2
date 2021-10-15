@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@font-face {
+    font-family: 'quicksandregular';
+    src: url('fonter/quicksand-regular-webfont.woff2') format('woff2'),
+         url('fonter/quicksand-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to bottom left,rgb(223, 96, 174), rgb(241, 214, 238));
+  background-attachment:fixed;
+}
+
+header > nav {
+  position: relative;
+  font-size: 1.5em;
+  width: 100%;
+  padding: 2%;
+  display: flex;
+}
+
+h1 {
+  position: relative;
+  width: auto;
+  text-align: center;
+  font-family: 'quicksandregular', 'Times New Roman', Times, serif;
+  font-size: 4em;
+  text-shadow: 1px 1px 1px rgba(0, 3, 2, 0.55);
+  user-select: none;
+  transition: 1s all ease-out;
+  will-change: color, scale;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.page-list {
+  position: relative;
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.page-list > li {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+
+.page-list > li > a {
+  position: relative;
+  padding: 8px 16px;
+}
+
+p {
+  text-align: center;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+}
+
+.brødtekst {
+  margin: auto;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 70%;
+  text-align: center;
+}
+
+h1:hover {
+    z-index: 1000;
+    scale: 1.8;
+    color: rgba(59, 4, 47, 0.55);
+}
+
+h2 {
+    position: relative;
+    width: auto;
+    font-family: 'quicksandregular', 'Times New Roman', Times, serif;
+}
+
+section {
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 64px;
+  padding: 8px 16px;
+}
+
+.portrett {
+    position: relative;
+    width: 20vh;
+    height: 20vh;
+    object-fit: contain;
+    object-position: 0 0;
+    transition: 1s all ease-out;
+    will-change: transform, scale;
+}
+
+#indexportrett:hover {
+    transform: rotateZ(180deg);
+    scale: 1.25;
+}
+
+#resumeportrett:hover {
+  transform: rotateZ(180deg);
+    scale: 1.25;
+}
+
+.sidebyside {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    background-color: rgba(7, 59, 33, 0.6);
+    width: 100%;
+  }
+  
+  .sidebyside ul {
+    list-style: square;
+    text-align: start;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    width: 100%;
+    padding-left: 24px;
+  }
+  
+  .sidebyside > div {
+    width: auto;
+    position: relative;
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 16px;
+  }
+
+  .sidebyside li {
+      text-align: start;
+  }
+
+  .page-list > li {
+    display: flex;
+  }
+
+  .page-list > li > a {
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      will-change: transform, color, text-decoration;
+      transition: 250ms all ease-out;
+      transform-origin: center top;
+  }
+
+  .page-list > li > a:hover {
+      transform: translateY(8%) rotateX(25deg) scale(1.2);
+      perspective: 200px;
+      color: white;
+      text-decoration: underline white;
+  }
+
+  .erfaring {
+    background-color: rgba(7, 59, 33, 0.2);
+  }
+
+  .utdanning {
+      background-color: rgba(7, 59, 33, 0.4);
+  }
+
+  .bold {
+    font-weight: 700;
+  }
+
+  .italics {
+    font-style: italic;
+  }
