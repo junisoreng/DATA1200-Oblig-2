@@ -12,6 +12,8 @@
   box-sizing: border-box;
 }
 
+
+
 body {
   margin: 0;
   padding: 0;
@@ -20,11 +22,62 @@ body {
 }
 
 header > nav {
-  position: relative;
+  z-index: 1;
+  position: fixed;
   font-size: 1.5em;
   width: 100%;
   padding: 2%;
   display: flex;
+  background-color: rgb(122, 1, 106);
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+  position: relative;
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar > li {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  display: flex;
+}
+
+.navbar > li > a {
+    color: lightgrey;
+    text-decoration: none;
+    will-change: transform, color, text-decoration;
+    transition: 250ms all ease-out;
+    position: relative;
+    padding: 8px 16px;
+}
+
+.navbar > li > a:hover {
+    transform: scale(1.2);
+    perspective: 200px;
+    color: white;
+    text-decoration: underline;
+}
+
+main {
+  padding-top: 70px;
 }
 
 h1 {
@@ -39,37 +92,46 @@ h1 {
   will-change: color, scale;
 }
 
-ul{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
+h1:hover {
+  color: rgba(59, 4, 47, 0.55);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+
 }
 
-.page-list {
+h2 {
+  position: relative;
+  width: auto;
+  font-family: 'quicksandregular', 'Times New Roman', Times, serif;
+}
+
+.image-galleri{
   position: relative;
   list-style: none;
-  width: 100%;
-  margin: 0;
-  padding: 0;
   display: flex;
+  height: 500px;
+  width: 500px;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+  object-fit: cover;
 }
 
-.page-list > li {
+.sun {
   position: relative;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  width: auto;
+  width: 20vh;
+  height: 20vh;
+  object-fit: contain;
+  object-position: 0 0;
+  transition: 1s all ease-out;
+  will-change: transform;
 }
 
-.page-list > li > a {
-  position: relative;
-  padding: 8px 16px;
+.sun:hover {
+  transform: rotateZ(180deg);
 }
 
 p {
@@ -78,118 +140,24 @@ p {
   font-family: 'Roboto', sans-serif;
 }
 
-.brødtekst {
+.bildetekst {
   margin: auto;
   box-sizing: border-box;
   padding: 10px;
   width: 70%;
-  text-align: center;
-}
-
-h1:hover {
-    z-index: 1000;
-    scale: 1.8;
-    color: rgba(59, 4, 47, 0.55);
-}
-
-h2 {
-    position: relative;
-    width: auto;
-    font-family: 'quicksandregular', 'Times New Roman', Times, serif;
+  text-align: -webkit-center;
 }
 
 section {
   position: relative;
-  text-align: center;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 100%;
-  margin-bottom: 64px;
-  padding: 8px 16px;
+  padding-bottom: 40px;
 }
 
-.portrett {
-    position: relative;
-    width: 20vh;
-    height: 20vh;
-    object-fit: contain;
-    object-position: 0 0;
-    transition: 1s all ease-out;
-    will-change: transform, scale;
-}
 
-#indexportrett:hover {
-    transform: rotateZ(180deg);
-    scale: 1.25;
-}
-
-#resumeportrett:hover {
-  transform: rotateZ(180deg);
-    scale: 1.25;
-}
-
-.sidebyside {
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    text-align: center;
-    background-color: rgba(7, 59, 33, 0.6);
-    width: 100%;
-  }
-  
-  .sidebyside ul {
-    list-style: square;
-    text-align: start;
-    font-family: 'Roboto', sans-serif;
-    position: relative;
-    width: 100%;
-    padding-left: 24px;
-  }
-  
-  .sidebyside > div {
-    width: auto;
-    position: relative;
-    display: grid;
-    flex-direction: column;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    gap: 16px;
-  }
-
-  .sidebyside li {
-      text-align: start;
-  }
-
-  .page-list > li {
-    display: flex;
-  }
-
-  .page-list > li > a {
-      color: rgb(0, 0, 0);
-      text-decoration: none;
-      will-change: transform, color, text-decoration;
-      transition: 250ms all ease-out;
-      transform-origin: center top;
-  }
-
-  .page-list > li > a:hover {
-      transform: translateY(8%) rotateX(25deg) scale(1.2);
-      perspective: 200px;
-      color: white;
-      text-decoration: underline white;
-  }
-
-  .erfaring {
-    background-color: rgba(7, 59, 33, 0.2);
-  }
-
-  .utdanning {
-      background-color: rgba(7, 59, 33, 0.4);
-  }
 
   .bold {
     font-weight: 700;
@@ -198,3 +166,22 @@ section {
   .italics {
     font-style: italic;
   }
+
+  .bildetekst > p {
+    overflow: hidden;
+    animation: animate 2s linear forwards;
+  }
+
+  @keyframes animate {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    40% {
+        width: 50%;
+        height: 50%;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+    }
