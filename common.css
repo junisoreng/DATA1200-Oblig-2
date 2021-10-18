@@ -120,6 +120,19 @@ h2 {
   object-fit: cover;
 }
 
+.wireframes {
+  position: relative;
+  display: flex;
+  width: 55vw;
+  object-fit: cover;
+  height: auto;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+
+}
+
 .sun {
   position: relative;
   width: 20vh;
