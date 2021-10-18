@@ -1,0 +1,69 @@
+.galleri {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+.ramme {
+    position: relative;
+    width: 50vw;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding-bottom: 25px;
+}
+
+.ramme h2 {
+    margin: 16px;
+}
+
+.ramme p {
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: justify;
+    padding: 0;
+    margin: 16px;
+}
+
+.ramme > img{
+    position: relative;
+    width: 100%;
+    height: 28vw;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+}
+
+.text {
+    position: absolute;
+    z-index: 2; 
+    width: 80%;
+    bottom: 0;
+    left: 20px;
+}
+
+.text > h2 {
+    background: rgba(255, 255,   255, 0.35);
+    transform: translateX(20px) translateY(25%);
+    margin: 0;
+    padding: 8px 16px;
+}
+
+.text > p {
+    background: rgba(255, 255,   255, 0.55);
+    margin: 0;
+    padding: 8px 16px;
+}

@@ -1,0 +1,11 @@
+.galleri {
+    flex-direction: column;   
+}
+
+.ramme {
+    width: 100%;
+}
+
+.ramme > img {
+    height: 56.25vw;
+}

@@ -1,94 +1,101 @@
 <!DOCTYPE html>
 <html lang="no">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Sommeren 2021</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />    
-  </head>
 
-  <body>
-    <header>
-      <nav>
-        <ul class="navbar">
-          <li><a href="refleksjon.html">Refleksjon</a></li>
-          <li><a href="index.html">Bildegalleri</a></li>
-          <li><a href="wireframes.html">Wireframes</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Sommeren 2021</title>
+  <link rel="stylesheet" type="text/css" href="common.css" />
+  <link rel="stylesheet" type="text/css" href="index.css" />
+  <link rel="stylesheet" type="text/css" media="screen and (max-width:800px) and (min-width: 0)" href="phone.css" />
+</head>
 
-    <main>
-      <section>
-        <h1>Bildegalleri fra sommeren 2021</h1>
-        <img class="sun" src="images/sol.png" alt="Liten sol">
-      </section>
+<body>
+  <header>
+    <nav>
+      <ul class="navbar">
+        <li><a href="refleksjon.html">Refleksjon</a></li>
+        <li><a href="index.html">Bildegalleri</a></li>
+        <li><a href="wireframes.html">Wireframes</a></li>
+      </ul>
+    </nav>
+  </header>
 
-      <article class="bildetekst">
-        <h2><cite>Telttur</cite></h2>
-        <img class ="image-galleri" src="images/telttur.jpg" alt="Bilde av telt ved en elv">
-      
+  <main>
+    <section>
+      <h1>Bildegalleri fra sommeren 2021</h1>
+      <img class="sun" src="images/sol.png" alt="Liten sol">
+    </section>
+
+    <section class="galleri">
+      <article class="ramme">
+        <img src="images/telttur.jpg" alt="Bilde av telt ved en elv">
+        <div class="text">
+          <h2><cite>Telttur</cite></h2>
         <p>
           Dette bildet er fra en telttur i Jotunheimen i sommer. <br>
           Elva i bakgrunnen er fra en isbre lenger opp i dalen. <br>
           Turen var kjempefin og gikk over 5 dager.
         </p>
+        </div>
       </article>
-    
 
-      <article class="bildetekst">
+
+      <article class="ramme">
+        <img  src="images/folkefest.jpg" alt="Folk som danser i gatene">
         <h2><cite>Folkefest</cite></h2>
-        <img class ="image-galleri" src="images/folkefest.jpg" alt="Folk som danser i gatene">
 
-      <p>
-        Bilde av en gate i Oslo sentrum rett før gjenåpning. <br>
-        Man kan se at folkene danser salsa og koser seg og savner livet før pandemien. 
-      </p>
-    </article>
+        <p>
+          Bilde av en gate i Oslo sentrum rett før gjenåpning. <br>
+          Man kan se at folkene danser salsa og koser seg og savner livet før pandemien.
+        </p>
+      </article>
 
-      <article class="bildetekst">
+      <article class="ramme">
+        <img  src="images/kirken.jpg" alt="Kirken på Birkelunden">
         <h2><cite>Kirken</cite></h2>
-        <img class ="image-galleri" src="images/kirken.jpg" alt="Kirken på Birkelunden">
 
         <p>
           En vakker (og bråkete) kirke jeg gikk forbi i sommer. <br>
-          Kirken vekker meg hver lørdag når den kaller inn til gudstjeneste, <br> 
-          og jeg blir like irritert hver gang.  
+          Kirken vekker meg hver lørdag når den kaller inn til gudstjeneste, <br>
+          og jeg blir like irritert hver gang.
         </p>
       </article>
-      
-      <article class="bildetekst">
+
+      <article class="ramme">
+        <img  src="images/basseng.jpg" alt="Basseng">
         <h2><cite>Basseng</cite></h2>
-        <img class ="image-galleri" src="images/basseng.jpg" alt="Basseng">
-      
+
 
         <p>
           Et basseng på Korsika som blir flittig brukt. <br>
           Strålende vær og karantenekrav er oppsummerende for denne ferien.
         </p>
       </article>
-    
 
-      <article class="bildetekst">
+
+      <article class="ramme">
+        <img src="images/besseggen.jpg" alt="Besseggen">
         <h2><cite>Besseggen</cite></h2>
-        <img class ="image-galleri" src="images/besseggen.jpg" alt="Besseggen">
 
-      <p>
-        Nasjonalromantiske Besseggen i strålende vær. <br>
-        Angrepet av høydeskrekk og slitne i beina nådde vi toppen. 
-      </p>
-    </article>
+        <p>
+          Nasjonalromantiske Besseggen i strålende vær. <br>
+          Angrepet av høydeskrekk og slitne i beina nådde vi toppen.
+        </p>
+      </article>
 
-      <article class="bildetekst">
+      <article class="ramme">
+        <img src="images/vannhenting.jpg" alt="Vannhenting i Jotunheimen">
         <h2><cite>Vannhenting</cite></h2>
-        <img class ="image-galleri" src="images/vannhenting.jpg" alt="Vannhenting i Jotunheimen">
 
         <p>
           Vannhenting i et lite vann på vei opp mot Besseggen. <br>
-          Denne natten ble vi vekket av reinsdyr som gikk rett forbi teltet.  
+          Denne natten ble vi vekket av reinsdyr som gikk rett forbi teltet.
         </p>
       </article>
-    </main>
-  </body>
+    </section>
+  </main>
+</body>
+
 </html>
